@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Comunicación Asertiva · Análisis y Desarrollo de Software</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .integrante-card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .btn-integrante {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 10px 16px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            background: #5035bc;
+            color: #ffffff;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+        .btn-integrante:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        .perfil-integrante {
+            scroll-margin-top: 24px;
+        }
+
+        .perfil-integrante h3 {
+            margin-top: 22px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <header>
+        <p class="eyebrow">Blog de formación · Competencia de comunicación</p>
+
+        <h1>
+            La comunicación asertiva en el desempeño del Tecnólogo en Análisis y Desarrollo de Software
+        </h1>
+
+        <p>
+            Blog del equipo: lo que aprendimos sobre comunicación, sus tipos,
+            funciones del lenguaje y técnicas asertivas.
+        </p>
+    </header>
+
+    <nav>
+        <a href="#intro">Introducción</a>
+        <a href="#tipos">Tipos</a>
+        <a href="#funciones">Funciones del lenguaje</a>
+        <a href="#tecnicas">Técnicas asertivas</a>
+        <a href="#reto">Reto</a>
+        <a href="#equipo">Equipo</a>
+    </nav>
+
+    <main>
+
+        <section id="intro">
+            <h2>¿Qué es la comunicación y por qué importa?</h2>
+            <p class="sub">Introducción</p>
+
+            <div class="box">
+                <p>
+                    La comunicación es algo que usamos todos los días para hablar con otras personas,
+                    expresar lo que sentimos, compartir ideas y decir lo que pensamos. Es importante 
+                    porque nos ayuda a entendernos mejor, evitamos malentendidos y solucionar problemas o intentar
+                    llegar a una solución. 
+                </p>
+                <p>
+                    La comunicación es muy importante ya que con esta es como nos relacionamos con los
+                    demás, todos los días nos comunicamos y es importante el saber como debemos
+                    relacionarnos en diferentes situaciones y lugares, ya sea el trabajo, el estudio, con familia/amigos 
+                    e incluso al trabajador de la tienda que no conocemos.
+                </p>
+            </div>
+
+            <div class="grid" style="margin-top: 14px">
+                <div class="card">
+                    <h3>Claridad en requisitos</h3>
+                    <p>Todo el equipo comprende las necesidades y se evitan errores.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Colaboración</h3>
+                    <p>Todos pueden aportar ideas y soluciones.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Resolución de conflictos</h3>
+                    <p>Se buscan soluciones mediante el respeto y el diálogo.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Retroalimentación</h3>
+                    <p>Se aprende y se mejora el producto continuamente.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Relación con clientes</h3>
+                    <p>Se comprenden necesidades y se gestionan expectativas.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Negociación</h3>
+                    <p>Se acuerdan plazos y recursos realistas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tipos">
+            <h2>Tipos de comunicación</h2>
+            <p class="sub">Cinco estilos que utilizamos según la situación</p>
+
+            <div class="grid">
+                <div class="card">
+                    <span class="tag">PASIVA</span>
+                    <h3>Comunicación pasiva</h3>
+                    <p>
+                        La persona evita expresar lo que piensa o siente por
+                        miedo al conflicto y permite que otros decidan.
+                    </p>
+                    <div class="ej">
+                        "Bueno, como ustedes prefieran… no importa."
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="tag">AGRESIVA</span>
+                    <h3>Comunicación agresiva</h3>
+                    <p>
+                        Se imponen las ideas sin respetar a los demás mediante
+                        gritos, órdenes o críticas personales.
+                    </p>
+                    <div class="ej">
+                        "Ese código está horrible. Vuelva a hacerlo ya."
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="tag">PASIVO-AGRESIVA</span>
+                    <h3>Comunicación pasivo-agresiva</h3>
+                    <p>
+                        La molestia se expresa indirectamente mediante sarcasmos,
+                        indirectas o comportamientos que demuestran desacuerdo.
+                    </p>
+                    <div class="ej">
+                        "Claro, yo hago todo otra vez, como siempre."
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="tag">AGRESIVO-PASIVA</span>
+                    <h3>Comunicación agresivo-pasiva</h3>
+                    <p>
+                        La persona alterna entre reacciones agresivas y
+                        comportamientos pasivos, como guardar silencio o evitar
+                        resolver los problemas.
+                    </p>
+                    <div class="ej">
+                        Discute durante una reunión y después evita hablar del tema.
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="tag">ASERTIVA</span>
+                    <h3>Comunicación asertiva</h3>
+                    <p>
+                        Expresa ideas, necesidades y desacuerdos de manera
+                        clara, directa y respetuosa.
+                    </p>
+                    <div class="ej">
+                        "Entiendo que hay prisa, pero necesito dos días más
+                        para entregar un trabajo de calidad."
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrap box" style="margin-top: 14px">
+                <table>
+                    <tr>
+                        <th>Estilo</th>
+                        <th>Respeto a mí</th>
+                        <th>Respeto al otro</th>
+                        <th>Resultado típico</th>
+                    </tr>
+                    <tr>
+                        <td>Pasivo</td>
+                        <td>Bajo</td>
+                        <td>Alto</td>
+                        <td>Frustración acumulada</td>
+                    </tr>
+                    <tr>
+                        <td>Agresivo</td>
+                        <td>Alto</td>
+                        <td>Bajo</td>
+                        <td>Conflicto y miedo</td>
+                    </tr>
+                    <tr>
+                        <td>Pasivo-agresivo</td>
+                        <td>Oculto</td>
+                        <td>Bajo</td>
+                        <td>Desconfianza</td>
+                    </tr>
+                    <tr>
+                        <td>Agresivo-pasivo</td>
+                        <td>Inestable</td>
+                        <td>Inestable</td>
+                        <td>Conflictos sin resolver</td>
+                    </tr>
+                    <tr>
+                        <td>Asertivo</td>
+                        <td>Alto</td>
+                        <td>Alto</td>
+                        <td>Acuerdos y confianza</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section id="funciones">
+            <h2>Funciones del lenguaje</h2>
+            <p class="sub">Para qué usamos las palabras</p>
+
+            <div class="grid">
+                <div class="card">
+                    <span class="tag">EMOTIVA</span>
+                    <h3>Expresiva</h3>
+                    <p>Expresa sentimientos y estados de ánimo del emisor.</p>
+                    <div class="ej">
+                        "¡Qué alegría que el sistema funcione sin errores!"
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="tag">FÁTICA</span>
+                    <h3>De contacto</h3>
+                    <p>Inicia, mantiene o cierra la comunicación.</p>
+                    <div class="ej">
+                        "Hola, ¿me escuchan? Buenos días a todos."
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="tag">POÉTICA</span>
+                    <h3>Estética</h3>
+                    <p>Cuida la forma del mensaje mediante la creatividad.</p>
+                    <div class="ej">
+                        Crear un eslogan para la aplicación del proyecto.
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="tag">REFERENCIAL</span>
+                    <h3>Informativa</h3>
+                    <p>Transmite datos objetivos sobre una situación.</p>
+                    <div class="ej">
+                        "La base de datos tiene tres tablas."
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="tag">APELATIVA</span>
+                    <h3>Conativa</h3>
+                    <p>Busca influir en el receptor mediante peticiones o instrucciones.</p>
+                    <div class="ej">
+                        "Por favor, suban hoy los cambios al repositorio."
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="tag">METALINGÜÍSTICA</span>
+                    <h3>Sobre el código</h3>
+                    <p>Utiliza el lenguaje para explicar el propio lenguaje.</p>
+                    <div class="ej">
+                        "'Array' significa arreglo o lista de elementos."
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="tag">BIOGRÁFICA</span>
+                    <h3>Función biográfica</h3>
+                    <p>Narra experiencias, acontecimientos y trayectoria de una persona.</p>
+                    <div class="ej">
+                        La descripción personal de cada integrante del equipo.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tecnicas">
+            <h2>Técnicas de comunicación asertiva</h2>
+            <p class="sub">
+                Herramientas para defender nuestra postura con respeto
+            </p>
+
+            <div class="grid">
+                <div class="card">
+                    <span class="tag">DISCO RAYADO</span>
+                    <h3>Repetir con calma</h3>
+                    <p>
+                        Consiste en repetir el mensaje principal de manera
+                        tranquila y firme, sin dejarse desviar por presiones
+                        o provocaciones.
+                    </p>
+                    <div class="ej">
+                        Cliente: "Agrégame ese módulo gratis."
+                        <br>
+                        Tú: "Ese módulo no está en el alcance acordado."
+                        <br>
+                        Cliente: "Pero es muy poquito."
+                        <br>
+                        Tú: "Podemos cotizarlo por separado."
+                    </div>
+                </div>
+
+                <div class="card">
+                    <span class="tag">BANCO DE NIEBLA</span>
+                    <h3>Reconocer sin ceder</h3>
+                    <p>
+                        Consiste en reconocer una parte de la crítica que
+                        podría ser cierta, sin discutir ni abandonar
+                        nuestra posición.
+                    </p>
+                    <div class="ej">
+                        Compañero: "Siempre te demoras con las entregas."
+                        <br>
+                        Tú: "Puede ser que a veces me demore. Esta vez
+                        entregaré el jueves, como acordamos."
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="reto">
+            <h2>Reflexión del reto: ¿con quien se te dificulta más hablar?</h2>
+            <p class="sub">tipos de comunicación </p>
+
+            <div class="grid">
+
+                <article class="card">
+                    <span class="tag">INTEGRANTE 1</span>
+                    <h3>Line Yaniris Galeano Patiño</h3>
+                    <p>
+                        La persona con la que más se me dificulta hablar es con mi compañero y esta actividad me hizo pensar en cómo mis emociones y primeras impresiones pueden 
+                        influir en la forma en que trato a los demás. A veces puedo alejarme de alguien 
+                        sin conocer sus razones o su forma de ser. Aprendí que es importante escuchar, 
+                        intentar comprender a la otra persona y tratarla con respeto, aunque tengamos 
+                        diferencias.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <span class="tag">INTEGRANTE 2</span>
+                    <h3>Ana Sofía Monsalve Higuita</h3>
+                    <p>
+                        La persona con la que se me dificulta hablar más es con mi primo 
+                        y gracias a este reto me permitió comprender que en ocasiones, se nos 
+                        dificulta hablar con algunas personas porque tenemos personalidades diferentes o 
+                        porque no sabemos cómo acercarnos a ellas. Pero antes de juzgar a alguien 
+                        por su forma de ser, debemos intentar conocerla y comprender las razones por las 
+                        que actúa de cierta manera.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <span class="tag">INTEGRANTE 3</span>
+                    <h3>Ximena Cardona Tobón</h3>
+                    <p>
+                        La persona con la que se me dificulta hablar más es con mi vecina y con este 
+                        reto aprendí que a veces puedo tener una idea equivocada de alguien sin conocerlo 
+                        realmente. Por timidez o falta de confianza, puedo preferir evitar una 
+                        conversación en lugar de intentarlo. Comprendí que es importante escuchar, no 
+                        juzgar por las primeras impresiones y respetar las diferencias de cada persona.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="equipo">
+            <h2>Nuestro equipo</h2>
+            <p class="sub">
+                Aprendices del Tecnólogo en Análisis y Desarrollo de Software
+            </p>
+
+            <div class="grid">
+                <article class="card integrante-card">
+                    <div class="avatar">L</div>
+                    <h3>Line Yaniris Galeano Patiño</h3>
+                    <p>
+                        Consulta su descripción personal, sus evidencias
+                        y su reflexión sobre la comunicación.
+                    </p>
+                    <a class="btn-integrante" href="#line">
+                        Ver más 
+                    </a>
+                </article>
+
+                <article class="card integrante-card">
+                    <div class="avatar">A</div>
+                    <h3>Ana Sofia Monsalve Higuita</h3>
+                    <p>
+                        Consulta su descripción personal, sus evidencias
+                        y su reflexión sobre la comunicación.
+                    </p>
+                    <a class="btn-integrante" href="#ana-sofia">
+                        Ver más
+                    </a>
+                </article>
+
+                <article class="card integrante-card">
+                    <div class="avatar">X</div>
+                    <h3>Ximena Cardona Tobón</h3>
+                    <p>
+                        Consulta su descripción personal, sus evidencias
+                        y su reflexión sobre la comunicación.
+                    </p>
+                    <a class="btn-integrante" href="#ximena">
+                        Ver más
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <section id="line" class="perfil-integrante">
+            <h2>Info de Line Yaniris Galeano Patiño</h2>
+            <p class="sub">Descripción, evidencias y reflexión personal</p>
+
+            <div class="box">
+                <h3>Descripción personal</h3>
+                <p>
+                    Es una persona responsable, dedicada y con muchas ganas de aprender. Le gusta 
+                    la programación porque le permite desarrollar sus habilidades, resolver problemas 
+                    y crear cosas nuevas. Entre sus fortalezas se destacan la responsabilidad, 
+                    la perseverancia y el compromiso. Su meta profesional es convertirse en ingeniera 
+                    en sistemas, adquirir nuevos conocimientos y crecer tanto personal como 
+                    profesionalmente.
+                </p>
+
+                <h3>Evidencias de trabajo</h3>
+                <div class="ph">
+                    <ul>
+                        <li><a href="/EVIDENCIAS/LINE/LA SAPA CARAMELO - LINE.pdf" target="_blank" rel="noopener noreferrer">La sapa caramelo - Primera evidencia </a></li>
+                        <li><a href="/EVIDENCIAS/LINE/2EV0 _ TALLER TIPOS DE COMUNICACIÓN - LINE.pdf" target="_blank" rel="noopener noreferrer">Tipos de comunicaciones - Segunda evidencia</a></li>
+                        <li><a href="/EVIDENCIAS/LINE/Presentaci-n de la funci-n f-tica LINE.pdf" target="_blank" rel="noopener noreferrer">Tipo de función (Fática) - Tercera evidencia </a></li>
+
+                    </ul>
+                </div>
+
+                <h3>Reflexión personal</h3>
+                <p>
+                    Durante la competencia, aprendió la importancia de la comunicación asertiva y de 
+                    expresar sus ideas de manera clara, respetuosa y segura. Aprendió sobre las funciones de la comunicación y cómo se utilizan en la vida 
+                    cotidiana para expresar sentimientos, transmitir información, influir en los demás, 
+                    mantener conversaciones y comunicar mensajes de manera clara. Estos conocimientos le 
+                    permitirán mejorar sus relaciones interpersonales, trabajar en equipo, resolver conflictos 
+                    y comunicarse de manera efectiva en su vida personal y profesional como desarrolladora de software
+                </p>
+
+                <a class="btn-integrante" href="#equipo">Volver al equipo</a>
+            </div>
+        </section>
+
+        <section id="ana-sofia" class="perfil-integrante">
+            <h2>Info de Ana Sofia Monsalve Higuita</h2>
+            <p class="sub">Descripción, evidencias y reflexión personal</p>
+
+            <div class="box">
+                <h3>Descripción personal</h3>
+                <p>
+                    es una estudiante de Colombia dedicada al área del desarrollo de software. 
+                    Pese a lo complejo que resulta la programación, se caracteriza por su disciplina, 
+                    claridad para establecer límites y adaptabilidad. Sus proyectos a futuro abarcan 
+                    graduarse de su tecnólogo, convertirse en ingeniera de sistemas y ejercer la medicina 
+                    veterinaria enfocada en animales salvajes.
+                </p>
+
+                <h3>Evidencias de trabajo</h3>
+                <div class="ph">
+                    <ul>
+                        <li><a href="/EVIDENCIAS/ANA/cuento.pdf" target="_blank" rel="noopener noreferrer">La sapa caramelo - Primera evidencia </a></li>
+                        <li><a href="/EVIDENCIAS/ANA/2EV0 _ TALLER TIPOS DE COMUNICACI-N.docx.pdf" target="_blank" rel="noopener noreferrer">Tipos de comunicaciones - Segunda evidencia</a></li>
+                        <li><a href="/EVIDENCIAS/ANA/Disco-rayado.pdf" target="_blank" rel="noopener noreferrer">Tipo de función (Fática) - Tercera evidencia </a></li>
+                    </ul>
+                </div>
+
+                <h3>Reflexión personal</h3>
+                <p>
+                    Tras reflexionar sobre lo aprendido, Ana Sofía considera que los temas abordados 
+                    formaban parte de sus conocimientos previos, por lo que su estilo de comunicación no 
+                    cambió. Sin embargo, reafirma la importancia de usar una comunicación firme para 
+                    establecer límites claros, técnica que aplicará de forma constante en su ámbito 
+                    profesional.
+                </p>
+
+                <a class="btn-integrante" href="#equipo">Volver al equipo</a>
+            </div>
+        </section>
+
+        <section id="ximena" class="perfil-integrante">
+            <h2>Info de Ximena Cardona Tobón</h2>
+            <p class="sub">Descripción, evidencias y reflexión personal</p>
+
+            <div class="box">
+                <h3>Descripción personal</h3>
+                <p>
+                    Disfruta la programación y sobre todo el Frontend y maquetado de las páginas web. Una de sus metas es 
+                    viajar por países angloparlantes y especializarse en el desarrollo de videojuegos. Es reservada pero en sus fortalezas esta el querer
+                    aprender cosas nuevas, saber el por que de las cosas, y la organización a la hora de 
+                    hacer trabajos en grupo.
+                </p>
+
+                <h3>Evidencias de trabajo</h3>
+                <div class="ph">
+                    <ul>
+                        <li><a href="/EVIDENCIAS/XIMENA/cuento.pdf" target="_blank" rel="noopener noreferrer">La sapa caramelo - Primera evidencia </a></li>
+                        <li><a href="/EVIDENCIAS/XIMENA/2EV0 _ TALLER TIPOS DE COMUNICACIÓN.pdf" target="_blank" rel="noopener noreferrer">Tipos de comunicaciones - Segunda evidencia</a></li>
+                        <li><a href="/EVIDENCIAS/XIMENA/Funciones del lenguaje.pdf" target="_blank" rel="noopener noreferrer">Tipo de función (Fática) - Tercera evidencia </a></li>
+                    </ul>
+                </div>
+
+                <h3>Reflexión personal</h3>
+                <p>
+                    Aprendió que la comunicación asertiva es fundamental para expresar ideas, opiniones y 
+                    necesidades de manera clara y respetuosa, teniendo en cuenta los puntos de vista de 
+                    los demás. La técnica que utilizará será la escucha activa, ya que le permite 
+                    comprender mejor a otras personas, evitar malentendidos y encontrar soluciones en 
+                    conjunto. En su vida profesional, especialmente en el desarrollo de software, 
+                    aplicará estos conocimientos al trabajar en equipo, comprender los requerimientos de 
+                    los clientes, compartir ideas y recibir sugerencias de manera constructiva. Reconoce 
+                    que una buena comunicación facilita el trabajo colaborativo y contribuye al desarrollo 
+                    de proyectos exitosos.
+                </p>
+
+                <a class="btn-integrante" href="#equipo">Volver al equipo</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        Blog de Comunicación Asertiva · Tecnólogo en Análisis y Desarrollo de Software
+    </footer>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
